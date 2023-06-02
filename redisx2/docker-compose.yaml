@@ -1,6 +1,6 @@
 version: '3'
 services: 
-  redis-server: 
+  redis-message-broker-backend: 
     image: 'redis'
     ports: 
       - '6379:6379'

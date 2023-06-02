@@ -3,7 +3,7 @@ from redis import Redis
 from time import sleep
 
 server = Celery(
-    'tasks', 
+    'tasks', # name of the celery app
     broker='redis://localhost:6379/1', 
     backend='redis://localhost:6379/0'
 )
