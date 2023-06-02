@@ -1,7 +1,12 @@
 version: '3'
 services: 
-  redis-server: 
+  redis-backend: 
+    image: 'redis'
+    ports: 
+      - '6379:6379'
+  rabbitmq-message-broker: 
     image: 'rabbitmq:3-management'
     ports: 
       - '15672:15672'
       - '5672:5672'
+  

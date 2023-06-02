@@ -4,7 +4,7 @@ from redis import Redis
 from time import sleep
 
 server = Celery(
-    'tasks', 
+    'tasks', # name of the celery app
     broker='pyamqp://guest:guest@localhost:5672//', 
     backend='redis://localhost:6379/0'
 )
